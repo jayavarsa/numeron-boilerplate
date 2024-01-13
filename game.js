@@ -2,14 +2,10 @@
 
 var num1 = Math.round(Math.random()*100);
 var num2 = Math.round(Math.random()*100);
-
 var num1div = document.getElementById("number1")
 num1div.innerHTML = num1;
 var num2div = document.getElementById("number2")
 num2div.innerHTML = num2;
-
-// Iteration 3: Make the options button functional
-
 var greaterButton = document.getElementById("greater-than");
 var lesserButton = document.getElementById("lesser-than");
 var equalButton = document.getElementById("equal-to");
@@ -28,7 +24,6 @@ greaterButton.onclick = () =>{
     num1div.innerHTML = num1;
     num2div.innerHTML = num2;
 }
-
 equalButton.onclick = () =>{
     if (num1 == num2){
         totalscore++;
@@ -60,7 +55,6 @@ lesserButton.onclick = () =>{
 var presentTime = document.getElementById('timer');
 var time = 5;
 var timerID;
-
 function startTimer(){
     time = 5;
     presentTime.innerHTML = time;
